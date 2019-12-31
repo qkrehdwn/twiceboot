@@ -1,4 +1,5 @@
 import discord
+impirt os
 
 clinet = discord.Client()
 
@@ -38,5 +39,5 @@ async def on_message(message):
 
 
 
-
-clinet.run("NjYwODIxNTE5OTkxMTc3MjM2.Xgql-A.BL9mMSt8736V_0b1WxmJ3DnOwhs")
+access_token = os.environ["BOT_TOKEN"]
+clinet.run(access_token)
